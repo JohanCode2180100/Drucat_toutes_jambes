@@ -15,42 +15,88 @@
     <title>Drucat toutes jambes - Course a pied</title>
   </head>
   <body>
-    <div id="container">
-      <!-- =============================CONTAINER================================ -->
+    <!--========================================================================================CONTAINER===========================================================================================================-->
 
-      <!-- =============================NAVIGATION============================= -->
-      <header>
-        <div class="logo-dtj">
+    <!--========================================================================================NAVIGATION==========================================================================================================-->
+    <header>
+      <div class="logo-dtj">
+        <img
+          src="./assets/pictures/dtj-logo.png"
+          alt="logo du club de course a pied de drucat"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#home" class="item-navigation">Accueil</a>
+          </li>
+          <li>
+            <a href="#runners" class="item-navigation">Le club</a>
+          </li>
+
+          <li>
+            <a href="#walkers" class="item-navigation">Calendrier</a>
+          </li>
+          <li>
+            <a href="#infos" class="item-navigation">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ===========================MAIN====================================== -->
+    <main>
+      <div class="container">
+        <h1 class="global-title">
+          Le club de course a pied et de marche de Drucat toutes jambes
+        </h1>
+        <p class="subtitle">
+          Rejoignez-nous pour des entraînements motivants et des sorties
+          ludiques dans la nature
+        </p>
+
+        <!-- =======================CARDS===================================== -->
+
+        <div class="card">
           <img
-            src="./assets/pictures/dtj-logo.png"
-            alt="logo du club de course a pied de drucat"
+            class="img-card"
+            src="./assets/runners/omar-tursic-vEoD8Jg80Ck-unsplash.jpg"
+            alt="Un groupe de coureurs lors d'un entrainements"
           />
+          <div class="card-header">
+            <h3>Les entrainements collectifs</h3>
+          </div>
+          <div class="card-body">
+            <p>
+              Les entraînements collectifs stimulent la motivation, renforcent
+              la santé globale, offrent une diversité d'exercices et permettent
+              de nouvelles rencontres. Ils améliorent la forme physique, la
+              condition physique et la santé cardiovasculaire.
+            </p>
+          </div>
         </div>
-        <nav>
-         
-          <ul>
-            <li>
-              <a href="#home" class="item-navigation">Accueil</a>
-            </li>
-            <li>
-              <a href="#runners" class="item-navigation">Le club</a>
-            </li>
 
-            <li>
-              <a href="#walkers" class="item-navigation">Calendrier</a>
-            </li>
-            <li>
-              <a href="#infos" class="item-navigation">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <!-- ===========================MAIN====================================== -->
-      <main>
-        <div class="container"></div>
-      </main>
-    </div>
+        <div class="card">
+          <img
+            class="img-card"
+            src="./assets/walkers/annie-spratt-VTlJqy4fayY-unsplash.jpg"
+            alt="Un groupe de coureurs lors d'un entrainements"
+          />
+          <div class="card-header">
+            <h3>Marcher, se detendre</h3>
+          </div>
+          <div class="card-body">
+            <p>
+              La marche à pied est simple, accessible et bénéfique pour la
+              santé. Elle améliore la condition physique, réduit le stress,
+              renforce les os et les muscles et stimule la circulation sanguine.
+              Elle peut être intégrée facilement à la routine quotidienne pour
+              des bénéfices durables.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <!-- ==========================FOOTER===================================== -->
     <footer></footer>
