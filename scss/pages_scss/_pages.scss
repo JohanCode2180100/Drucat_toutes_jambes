@@ -58,7 +58,10 @@ body {
     text-align: center;
     margin: 30px 30px;
     font-family: Montserrat, Roboto, Arial, Helvetica, sans-serif;
+<<<<<<< HEAD
     color: $fourthColor;
+=======
+>>>>>>> 9d175ac5178091feeca84e636abb7ded80d55eb8
   }
 
   .card {
@@ -66,13 +69,18 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100%;
+<<<<<<< HEAD
     width: 80%;
+=======
+    width: 90%;
+>>>>>>> 9d175ac5178091feeca84e636abb7ded80d55eb8
     background: $secondaryColor;
     color: $fifthColor;
     margin-top: 80px;
     border: 1px solid black;
     border-radius: 20px;
     text-align: center;
+<<<<<<< HEAD
     h3 {
       font-family: Roboto, Montserrat, Arial, sans-serif;
     }
@@ -90,6 +98,12 @@ body {
     position: relative;
     background-position: center;
     top: -40px;
+=======
+  }
+  .img-card {
+    position: relative;
+    top: -60px;
+>>>>>>> 9d175ac5178091feeca84e636abb7ded80d55eb8
     width: 200px;
     height: 200px;
     border-radius: 100%;
@@ -99,6 +113,14 @@ body {
     font-family: Roboto, Montserrat, Arial, Helvetica, sans-serif;
     margin-bottom: 30px;
   }
+<<<<<<< HEAD
+=======
+  .card-body {
+    text-align: center;
+    margin: 15px 10px 15px;
+    font-size: 1em;
+  }
+>>>>>>> 9d175ac5178091feeca84e636abb7ded80d55eb8
 }
 
 @media screen and (min-width: 390px) {

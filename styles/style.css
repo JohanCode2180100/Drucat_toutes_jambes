@@ -1,130 +1,18 @@
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* Error: expected "{".
+ *    ,
+ * 62 |     color: $fourthColor;
+ *    |                        ^
+ *    '
+ *   scss\pages_scss\_pages.scss 62:24  @import
+ *   scss\global.scss 4:9               root stylesheet */
 
-body {
-  font-family: Roboto, Montserrat, Helvetica, sans-serif;
-  background: #fffdff;
-  font-size: 16px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 62 \2502      color: $fourthColor;\d\a    \2502                         ^\a    \2575 \a   scss\\pages_scss\\_pages.scss 62:24  @import\a   scss\\global.scss 4:9               root stylesheet';
 }
-
-@media screen and (min-width: 320px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  img {
-    height: 180px;
-    width: 100%;
-  }
-  nav {
-    position: relative;
-    width: 100%;
-    height: 80px;
-    background: #0C0C0C;
-    display: flex;
-  }
-  nav ul {
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  nav ul li {
-    margin: 0 10px;
-    font-size: 1em;
-  }
-  nav ul li a {
-    text-decoration: none;
-    color: #fffdff;
-  }
-  h1 {
-    font-size: 1.5em;
-    text-align: center;
-    margin: 10px 10px;
-    color: #B062FC;
-    font-weight: bold;
-    line-height: 1.2;
-  }
-  .subtitle {
-    font-size: 1.2em;
-    text-align: center;
-    margin: 30px 30px;
-    font-family: Montserrat, Roboto, Arial, Helvetica, sans-serif;
-    color: #F205DC;
-  }
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 80%;
-    background: #0C0C0C;
-    color: #B062FC;
-    margin-top: 80px;
-    border: 1px solid black;
-    border-radius: 20px;
-    text-align: center;
-  }
-  .card h3 {
-    font-family: Roboto, Montserrat, Arial, sans-serif;
-  }
-  .card p {
-    font-family: Montserrat, Roboto, Arial, sans-serif;
-    letter-spacing: 2px;
-    line-height: 1.5;
-    text-align: center;
-    text-justify: inter-character;
-    font-size: 0.8em;
-    padding: 20px;
-  }
-  .img-card {
-    position: relative;
-    background-position: center;
-    top: -40px;
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-  }
-  .card-header {
-    font-size: 1.3em;
-    font-family: Roboto, Montserrat, Arial, Helvetica, sans-serif;
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 390px) {
-  img {
-    height: 200px;
-    width: 100%;
-  }
-  nav {
-    position: relative;
-    width: 100%;
-    height: 100px;
-    background: #0C0C0C;
-    display: flex;
-  }
-  nav ul {
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  nav ul li {
-    margin: 0 10px;
-    font-size: 1.3em;
-  }
-  nav ul li a {
-    text-decoration: none;
-    color: #fffdff;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
