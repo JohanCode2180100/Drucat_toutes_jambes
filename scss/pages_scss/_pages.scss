@@ -12,7 +12,9 @@ body {
   background: $primaryColor;
   font-size: 16px;
 }
+// =========================================MEDIA 320px=========================
 
+// =========================================HEADER==============================
 @media screen and (min-width: 320px) {
   .container {
     display: flex;
@@ -45,18 +47,26 @@ body {
       }
     }
   }
+  // =========================================ACCUEIL==============================
   h1 {
-    font-size: 1.5em;
+    font-family: Roboto, Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
     text-align: center;
-    margin: 10px 10px;
+    margin: 50px 10px;
     color: $fifthColor;
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 1;
+  }
+  .enter {
+    color: black;
+    width: 150px;
+    border: 1px solid black;
   }
   .subtitle {
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-align: center;
-    margin: 30px 30px;
+    margin: 50px 10px;
+    color: $fourthColor;
     font-family: Montserrat, Roboto, Arial, Helvetica, sans-serif;
     color: $fourthColor;
   }
@@ -66,14 +76,11 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100%;
-
-    width: 80%;
-
     width: 90%;
     background: $secondaryColor;
     color: $fifthColor;
-    margin-top: 80px;
-    border: 1px solid black;
+    margin: 50px 50px;
+    border: 1px solid $fifthColor;
     border-radius: 20px;
     text-align: center;
 
@@ -90,32 +97,78 @@ body {
       padding: 20px;
     }
   }
-  .img-card {
-    position: relative;
-    background-position: center;
-    top: -40px;
-  }
-  .img-card {
-    position: relative;
-    top: -60px;
 
+  .img-card {
+    position: relative;
+    top: -40px;
+    background-position: center;
     width: 200px;
     height: 200px;
     border-radius: 100%;
+    filter: brightness(1.5);
   }
   .card-header {
     font-size: 1.3em;
     font-family: Roboto, Montserrat, Arial, Helvetica, sans-serif;
     margin-bottom: 30px;
+    text-decoration: underline;
   }
 
   .card-body {
     text-align: center;
     margin: 15px 10px 15px;
-    font-size: 1em;
+    font-size: 1.2em;
+  }
+
+  // =========================================FOOTER==============================
+  footer {
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat, Roboto, Arial, sans-serif;
+    color: $primaryColor;
+    .container-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: $secondaryColor;
+      width: 90%;
+      height: auto;
+      border-radius: 20px;
+      text-align: center;
+    }
+    h3 {
+      font-size: 1.3em;
+      margin: 10px auto 20px;
+      display: flex;
+      justify-content: center;
+      text-decoration: underline;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    li {
+      margin: 10px;
+    }
+  }
+
+  .lien-training {
+    margin: 20px;
+    a {
+      font-size: 1.5em;
+      text-align: center;
+      color: $fifthColor;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $primaryColor;
   }
 }
 
+// =========================================MEDIA 390px=========================
 @media screen and (min-width: 390px) {
   img {
     height: 200px;
