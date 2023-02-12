@@ -46,17 +46,24 @@ body {
     }
   }
   h1 {
-    font-size: 1.5em;
+    font-family: Roboto, Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
     text-align: center;
-    margin: 10px 10px;
+    margin: 50px 10px;
     color: $fifthColor;
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 1;
+  }
+  .enter {
+    color: black;
+    width: 150px;
+    border: 1px solid black;
   }
   .subtitle {
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-align: center;
-    margin: 30px 30px;
+    margin: 50px 10px;
+    color: $fourthColor;
     font-family: Montserrat, Roboto, Arial, Helvetica, sans-serif;
     color: $fourthColor;
   }
@@ -72,8 +79,8 @@ body {
     width: 90%;
     background: $secondaryColor;
     color: $fifthColor;
-    margin-top: 80px;
-    border: 1px solid black;
+    margin: 50px 50px;
+    border: 1px solid $fifthColor;
     border-radius: 20px;
     text-align: center;
 
@@ -99,6 +106,12 @@ body {
     position: relative;
     top: -60px;
 
+    filter: brightness(1.5);
+  }
+  .img-card {
+    position: relative;
+    top: -40px;
+
     width: 200px;
     height: 200px;
     border-radius: 100%;
@@ -107,12 +120,13 @@ body {
     font-size: 1.3em;
     font-family: Roboto, Montserrat, Arial, Helvetica, sans-serif;
     margin-bottom: 30px;
+    text-decoration: underline;
   }
 
   .card-body {
     text-align: center;
     margin: 15px 10px 15px;
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }
 
