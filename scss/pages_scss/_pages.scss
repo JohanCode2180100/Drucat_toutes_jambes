@@ -12,7 +12,9 @@ body {
   background: $primaryColor;
   font-size: 16px;
 }
+// =========================================MEDIA 320px=========================
 
+// =========================================HEADER==============================
 @media screen and (min-width: 320px) {
   .container {
     display: flex;
@@ -45,6 +47,7 @@ body {
       }
     }
   }
+  // =========================================ACCUEIL==============================
   h1 {
     font-family: Roboto, Montserrat, Arial, Helvetica, sans-serif;
     font-size: 1.8em;
@@ -73,9 +76,6 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100%;
-
-    width: 80%;
-
     width: 90%;
     background: $secondaryColor;
     color: $fifthColor;
@@ -97,24 +97,15 @@ body {
       padding: 20px;
     }
   }
+
   .img-card {
     position: relative;
+    top: -40px;
     background-position: center;
-    top: -40px;
-  }
-  .img-card {
-    position: relative;
-    top: -60px;
-
-    filter: brightness(1.5);
-  }
-  .img-card {
-    position: relative;
-    top: -40px;
-
     width: 200px;
     height: 200px;
     border-radius: 100%;
+    filter: brightness(1.5);
   }
   .card-header {
     font-size: 1.3em;
@@ -128,8 +119,56 @@ body {
     margin: 15px 10px 15px;
     font-size: 1.2em;
   }
+
+  // =========================================FOOTER==============================
+  footer {
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat, Roboto, Arial, sans-serif;
+    color: $primaryColor;
+    .container-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: $secondaryColor;
+      width: 90%;
+      height: auto;
+      border-radius: 20px;
+      text-align: center;
+    }
+    h3 {
+      font-size: 1.3em;
+      margin: 10px auto 20px;
+      display: flex;
+      justify-content: center;
+      text-decoration: underline;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    li {
+      margin: 10px;
+    }
+  }
+
+  .lien-training {
+    margin: 20px;
+    a {
+      font-size: 1.5em;
+      text-align: center;
+      color: $fifthColor;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $primaryColor;
+  }
 }
 
+// =========================================MEDIA 390px=========================
 @media screen and (min-width: 390px) {
   img {
     height: 200px;
