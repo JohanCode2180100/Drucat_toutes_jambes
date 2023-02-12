@@ -1,21 +1,32 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: Roboto, Helvetica, sans-serif;
+  font-family: Roboto, Montserrat, Helvetica, sans-serif;
   background: #fffdff;
   font-size: 16px;
 }
 
 @media screen and (min-width: 320px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   img {
     height: 180px;
     width: 100%;
   }
   nav {
-    /* navbar fixe et z-index de 1000 exageration ( au dessus de tout le monde  */
-    position: fixed;
-    z-index: 1000;
+    position: relative;
     width: 100%;
     height: 80px;
-    background: #171a21;
+    background: #0C0C0C;
     display: flex;
   }
   nav ul {
@@ -33,6 +44,59 @@ body {
     text-decoration: none;
     color: #fffdff;
   }
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px 10px;
+    color: #B062FC;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  .subtitle {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 30px 30px;
+    font-family: Montserrat, Roboto, Arial, Helvetica, sans-serif;
+    color: #F205DC;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    background: #0C0C0C;
+    color: #B062FC;
+    margin-top: 80px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .card h3 {
+    font-family: Roboto, Montserrat, Arial, sans-serif;
+  }
+  .card p {
+    font-family: Montserrat, Roboto, Arial, sans-serif;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-align: center;
+    text-justify: inter-character;
+    font-size: 0.8em;
+    padding: 20px;
+  }
+  .img-card {
+    position: relative;
+    background-position: center;
+    top: -40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+  }
+  .card-header {
+    font-size: 1.3em;
+    font-family: Roboto, Montserrat, Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 390px) {
   img {
@@ -40,12 +104,10 @@ body {
     width: 100%;
   }
   nav {
-    /* navbar fixe et z-index de 1000 exageration ( au dessus de tout le monde  */
-    position: fixed;
-    z-index: 1000;
+    position: relative;
     width: 100%;
     height: 100px;
-    background: #171a21;
+    background: #0C0C0C;
     display: flex;
   }
   nav ul {
