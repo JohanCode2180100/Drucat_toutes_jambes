@@ -71,7 +71,7 @@ body {
     color: $fourthColor;
   }
 
-  .card {
+  .card-main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,10 +83,30 @@ body {
     border: 1px solid $fifthColor;
     border-radius: 20px;
     text-align: center;
-
-    h3 {
-      font-family: Roboto, Montserrat, Arial, sans-serif;
+    .img-card {
+      position: relative;
+      top: -40px;
+      background-position: center;
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+      filter: brightness(1.5);
     }
+    .card-header {
+      font-size: 1.3em;
+      font-family: Roboto, Montserrat, Arial, Helvetica, sans-serif;
+      margin-bottom: 30px;
+      text-decoration: underline;
+      h3 {
+        font-family: Roboto, Montserrat, Arial, sans-serif;
+      }
+    }
+  }
+
+  .card-body {
+    text-align: center;
+    margin: 15px 10px 15px;
+    font-size: 1.2em;
     p {
       font-family: Montserrat, Roboto, Arial, sans-serif;
       letter-spacing: 2px;
@@ -96,28 +116,6 @@ body {
       font-size: 0.8em;
       padding: 20px;
     }
-  }
-
-  .img-card {
-    position: relative;
-    top: -40px;
-    background-position: center;
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    filter: brightness(1.5);
-  }
-  .card-header {
-    font-size: 1.3em;
-    font-family: Roboto, Montserrat, Arial, Helvetica, sans-serif;
-    margin-bottom: 30px;
-    text-decoration: underline;
-  }
-
-  .card-body {
-    text-align: center;
-    margin: 15px 10px 15px;
-    font-size: 1.2em;
   }
 
   // =========================================FOOTER==============================
