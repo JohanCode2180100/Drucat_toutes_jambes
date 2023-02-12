@@ -218,5 +218,34 @@ body {
     font-size: 1.1em;
   }
 }
+@media screen and (min-width: 320px) {
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  form {
+    background: #B062FC;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    text-align: center;
+  }
+  div {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  button {
+    background: #fffdff;
+    color: #F205DC;
+    width: 60px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

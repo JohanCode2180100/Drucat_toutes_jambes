@@ -1,0 +1,29 @@
+@media screen and (min-width: 320px) {
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  form {
+    background: $fifthColor;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    text-align: center;
+  }
+  div {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  button {
+    background: $primaryColor;
+    color: $fourthColor;
+    width: 60px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+}
