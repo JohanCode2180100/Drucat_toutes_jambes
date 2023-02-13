@@ -7,17 +7,69 @@ main {
   background: $primaryColor;
   @extend %display-center;
 }
+p {
+  @extend %p;
+}
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 280px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  img {
+    height: 150px;
+    width: 100%;
+  }
+  nav {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: $secondaryColor;
+    display: flex;
+    ul {
+      width: 100%;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      li {
+        margin: 0 10px;
+        font-size: 0.8em;
+        a {
+          text-decoration: none;
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+
   .container-club {
     width: 90%;
   }
+  h2 {
+    margin: 20px;
+    font-size: 1.4em;
+  }
   .bg-img {
     width: 100%;
+
     background-position: center;
   }
-
-}
-p {
-    @extend %p;
+  p {
+    font-size: 1em;
   }
+}
+
+@media screen and (min-width: 390px) {
+  .logo-dtj img {
+    height: 50%;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  p {
+    font-size: 1.1em;
+  }
+}

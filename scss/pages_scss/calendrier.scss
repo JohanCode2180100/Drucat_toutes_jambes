@@ -1,40 +1,38 @@
-@media screen and (min-width: 320px) {
-    h2{
-        font-size: 1.5em;
-        margin: 20px;
+@media screen and (min-width: 280px) {
+  h2 {
+    font-size: 1.5em;
+    margin: 20px;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-cro {
+    background: $secondaryColor;
+    color: $primaryColor;
+    border: 1px solid $primaryColor;
+    width: 90%;
+    height: auto;
+    margin-top: 10px;
+    h3 {
+      font-size: 1.5em;
+      margin: 10px;
+      text-align: center;
     }
-    article{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    img {
+      width: 90%;
+      height: auto;
+      margin: 20px;
     }
-    .card-cro{
-        background: $secondaryColor;
-        color: $primaryColor;
-        border: 1px solid $primaryColor;
-        width: 90%;
-        height: auto;
-        margin-top: 10px;
-        h3{
-            font-size: 1.5em;
-            margin: 10px;
-            text-align: center;
-        }
-        img{
-            width: 90%;
-            height: auto;
-            margin: 20px;
-            
-        }
-        p{
-            margin: 10px;
-            text-align: center;
-            
-        }
+    p {
+      margin: 10px;
+      text-align: center;
     }
-    .important{
-            font-size: 2em;
-            font-weight: bold;
-            text-align: center;
-        }
+  }
+  .important {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+  }
 }

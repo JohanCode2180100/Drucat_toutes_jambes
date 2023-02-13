@@ -31,8 +31,123 @@
       text-decoration: underline;
       font-size: 1.3em;
     }
-    p {
-      font-size: 1.1em;
+  }
+}
+p {
+  @extend %p;
+}
+// =====================================================================================MEDIA 768px==========================================================================================================
+@media screen and (min-width: 768px) {
+  .training-cards {
+    .resume {
+      text-align: center;
+      color: $fourthColor;
+      line-height: 1.5;
+      font-size: 2.5em;
+      margin: 20px 20px;
     }
   }
+  .training-review {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    .card {
+      height: auto;
+      width: 45%;
+      background: $secondaryColor;
+      color: $fifthColor;
+      margin: 10px auto;
+      padding: 10px;
+      border: 1px solid $fifthColor;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    span {
+      text-decoration: underline;
+      font-size: 1.3em;
+    }
+  }
+}
+p {
+  @extend %p;
+}
+// =====================================================================================MEDIA 1280px==========================================================================================================
+@media screen and (min-width: 1280px) {
+  .training-cards {
+    .resume {
+      text-align: center;
+      color: $fourthColor;
+      line-height: 1.5;
+      font-size: 2.5em;
+      margin: 20px 20px;
+    }
+  }
+  .training-review {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    .card {
+      height: auto;
+      width: 45%;
+      background: $secondaryColor;
+      color: $fifthColor;
+      margin: 10px auto;
+      padding: 10px;
+      border: 1px solid $fifthColor;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    span {
+      text-decoration: underline;
+      font-size: 1.3em;
+    }
+  }
+}
+p {
+  font-size: 1.8em;
+}
+
+// =====================================================================================MEDIA 1600px==========================================================================================================
+@media screen and (min-width: 1600px) {
+  .training-cards {
+    .resume {
+      text-align: center;
+      color: $fourthColor;
+      line-height: 1.5;
+      font-size: 2.5em;
+      margin: 20px 20px;
+    }
+  }
+  .training-review {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    .card {
+      height: auto;
+      width: 45%;
+      background: $secondaryColor;
+      color: $fifthColor;
+      margin: 10px auto;
+      padding: 10px;
+      border: 1px solid $fifthColor;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    span {
+      text-decoration: underline;
+      font-size: 1.3em;
+    }
+  }
+}
+p {
+  font-size: 1.8em;
 }
