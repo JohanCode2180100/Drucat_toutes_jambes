@@ -1,0 +1,23 @@
+h2 {
+  @extend %h2-title;
+  color: $fifthColor;
+  font-weight: bold;
+}
+main {
+  background: $primaryColor;
+  @extend %display-center;
+}
+
+@media screen and (min-width: 320px) {
+  .container-club {
+    width: 90%;
+  }
+  .bg-img {
+    width: 100%;
+    background-position: center;
+  }
+
+}
+p {
+    @extend %p;
+  }
