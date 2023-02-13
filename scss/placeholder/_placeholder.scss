@@ -1,16 +1,30 @@
-%global-title {
-  font-family: Roboto, Montserrat, Arial, Helvetica, sans-serif;
-  font-size: 32px;
+%h1-title {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+%h2-title {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
   text-align: center;
 }
 
-%secondary-title {
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
-  font-size: 16px;
+%h3-title {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 1em;
   text-align: center;
 }
-%display-column-center {
+
+%display-center {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+}
+%p {
+  font-family: Montserrat, Roboto, Arial, sans-serif;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-align: center;
+  text-justify: inter-character;
+  font-size: 1em;
+  padding: 20px;
 }
