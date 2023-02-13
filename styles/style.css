@@ -256,5 +256,43 @@ body {
     border-radius: 10px;
   }
 }
+@media screen and (min-width: 320px) {
+  h2 {
+    font-size: 1.5em;
+    margin: 20px;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-cro {
+    background: #0C0C0C;
+    color: #fffdff;
+    border: 1px solid #fffdff;
+    width: 90%;
+    height: auto;
+    margin-top: 10px;
+  }
+  .card-cro h3 {
+    font-size: 1.5em;
+    margin: 10px;
+    text-align: center;
+  }
+  .card-cro img {
+    width: 90%;
+    height: auto;
+    margin: 20px;
+  }
+  .card-cro p {
+    margin: 10px;
+    text-align: center;
+  }
+  .important {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
