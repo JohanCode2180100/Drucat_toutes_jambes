@@ -1,29 +1,61 @@
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 280px) {
   main {
     display: flex;
     justify-content: center;
   }
   form {
     background: $fifthColor;
-    width: 90%;
+    width: 60%;
     height: auto;
     margin: 20px auto;
     text-align: center;
+    border-radius: 10px;
   }
-  div {
+  form div {
     margin: 10px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    input {
+      height: 20px;
+    }
+    .txtArea {
+      height: 100px;
+    }
   }
   button {
     background: $primaryColor;
     color: $fourthColor;
-    width: 80px;
-    height: 20px;
+    width: 100px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  input {
+    height: 20px;
+    width: 30%;
+  }
+  .txtArea {
+    height: 100px;
+    width: 60%;
+  }
+}
+// =========================================MEDIA 1280px=========================
+@media screen and (min-width: 1280px) {
+  form {
+    font-size: 1.5em;
+  }
+  input {
+    height: 40px;
+  }
+  .txtArea {
+    height: 150px;
   }
 }

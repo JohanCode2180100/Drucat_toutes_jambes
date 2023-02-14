@@ -26,22 +26,30 @@
           alt="logo du club de course a pied de drucat"
         />
       </div>
-      <nav>
+      <nav id="ancre-accueil">
         <ul>
           <li>
-            <a href="./index.html" class="item-navigation">Accueil</a>
+            <a href="./index.html#ancre-accueil" class="item-navigation"
+              >Accueil</a
+            >
           </li>
           <li>
-            <a href="./pages/le_club.html" class="item-navigation">Le club</a>
+            <a href="./pages/le_club.html#ancre-club" class="item-navigation"
+              >Le club</a
+            >
           </li>
 
           <li>
-            <a href="./pages/calendrier.html" class="item-navigation"
+            <a
+              href="./pages/calendrier.html#ancre-calendrier"
+              class="item-navigation"
               >Calendrier</a
             >
           </li>
           <li>
-            <a href="./pages/contact.html" class="item-navigation">Contact</a>
+            <a href="../pages/contact.html#ancre-form" class="item-navigation"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
@@ -60,43 +68,44 @@
         </p>
 
         <!-- =======================CARDS===================================== -->
-
         <div class="card-main">
-          <img
-            class="img-card"
-            src="./assets/runners/omar-tursic-vEoD8Jg80Ck-unsplash.jpg"
-            alt="Un groupe de coureurs lors d'un entrainements"
-          />
-          <div class="card-header">
-            <h3>Les entrainements collectifs</h3>
+          <div class="card-content">
+            <img
+              class="img-card"
+              src="./assets/runners/omar-tursic-vEoD8Jg80Ck-unsplash.jpg"
+              alt="Un groupe de coureurs lors d'un entrainements"
+            />
+            <div class="card-header">
+              <h3>Les entrainements collectifs</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                Les entraînements collectifs stimulent la motivation, renforcent
+                la santé globale, offrent une diversité d'exercices et
+                permettent de nouvelles rencontres. Ils améliorent la forme
+                physique, la condition physique et la santé cardiovasculaire.
+              </p>
+            </div>
           </div>
-          <div class="card-body">
-            <p>
-              Les entraînements collectifs stimulent la motivation, renforcent
-              la santé globale, offrent une diversité d'exercices et permettent
-              de nouvelles rencontres. Ils améliorent la forme physique, la
-              condition physique et la santé cardiovasculaire.
-            </p>
-          </div>
-        </div>
 
-        <div class="card-main">
-          <img
-            class="img-card"
-            src="./assets/walkers/annie-spratt-VTlJqy4fayY-unsplash.jpg"
-            alt="Un groupe de coureurs lors d'un entrainements"
-          />
-          <div class="card-header">
-            <h3>Marcher, se detendre</h3>
-          </div>
-          <div class="card-body">
-            <p>
-              La marche à pied est simple, accessible et bénéfique pour la
-              santé. Elle améliore la condition physique, réduit le stress,
-              renforce les os et les muscles et stimule la circulation sanguine.
-              Elle peut être intégrée facilement à la routine quotidienne pour
-              des bénéfices durables.
-            </p>
+          <div class="card-content">
+            <img
+              class="img-card"
+              src="./assets/walkers/annie-spratt-VTlJqy4fayY-unsplash.jpg"
+              alt="Un groupe de coureurs lors d'un entrainements"
+            />
+            <div class="card-header">
+              <h3>Marcher, se detendre</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                La marche à pied est simple, accessible et bénéfique pour la
+                santé. Elle améliore la condition physique, réduit le stress,
+                renforce les os et les muscles et stimule la circulation
+                sanguine. Elle peut être intégrée facilement à la routine
+                quotidienne pour des bénéfices durables.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -104,7 +113,6 @@
 
     <!-- ==========================FOOTER===================================== -->
     <footer>
-      <a target=""></a>
       <div class="container-footer">
         <div class="lien-training">
           <a href="./pages/entrainements.html"> <button>Progresser</button></a>
@@ -115,8 +123,9 @@
             <li class="adress">
               <i class="icon-adress"></i>
               <div class="adress-content">
-                <span class="contact-title">Adresse :</span>
+                <span class="title">Adresse :</span>
                 <a
+                  class="title"
                   href="https://www.google.fr/maps/place/Salle+Polyvalente/@50.1460095,1.8646322,19z/data=!4m14!1m7!3m6!1s0x47dd8d7333865269:0xd80412f41714ac67!2sSalle+Polyvalente!8m2!3d50.1465034!4d1.8649005!16s%2Fg%2F11btmqgdrl!3m5!1s0x47dd8d7333865269:0xd80412f41714ac67!8m2!3d50.1465034!4d1.8649005!16s%2Fg%2F11btmqgdrl"
                   >Rue Verte, 80132 Drucat</a
                 >
@@ -125,15 +134,16 @@
             <li class="mail">
               <i class="fa-thin fa-envelope"></i>
               <div class="mail-content">
-                <span class="mail-title">E-mail :</span>
-                <a class="adress" href="#">contact@dtj.fr</a>
+                <span class="title">E-mail :</span>
+                <a class="title" href="#">contact@dtj.fr</a>
               </div>
             </li>
             <li class="website">
               <i class="web-icon">
                 <div class="web-content">
-                  <span class="site-title">Site Web :</span>
+                  <span class="title">Site Web :</span>
                   <a
+                    class="title"
                     href="https://johancode2180100.github.io/Drucat_toutes_jambes/"
                     >www.DTJ.com</a
                   >

@@ -9,12 +9,15 @@
     align-items: center;
   }
   .card-cro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: $secondaryColor;
     color: $primaryColor;
     border: 1px solid $primaryColor;
     width: 90%;
     height: auto;
-    margin-top: 10px;
+    margin: 10px 10px;
     h3 {
       font-size: 1.5em;
       margin: 10px;
@@ -36,3 +39,41 @@
     text-align: center;
   }
 }
+// =========================================MEDIA 360px=========================
+@media screen and (min-width: 360px) {
+  main h2 {
+    font-size: 2em;
+  }
+  .card-cro h3 {
+    font-size: 1.7em;
+  }
+  .card-cro p {
+    font-size: 1.5em;
+  }
+}
+// =========================================MEDIA 500px=========================
+@media screen and (min-width: 500px) {
+  main h2 {
+    font-size: 2.5em;
+  }
+  .card-cro h3 {
+    font-size: 2em;
+  }
+  .card-cro p {
+    font-size: 2em;
+  }
+}
+// =========================================MEDIA 1280px=========================
+@media screen and (min-width: 1280px) {
+  main h2 {
+    font-size: 5em;
+  }
+  .card-cro h3 {
+    font-size: 4em;
+  }
+  .card-cro p {
+    font-size: 2.5em;
+  }
+}
+
+

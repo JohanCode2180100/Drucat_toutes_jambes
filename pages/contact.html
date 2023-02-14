@@ -26,28 +26,35 @@
       <nav>
         <ul>
           <li>
-            <a href="../index.html" class="item-navigation">Accueil</a>
+            <a href="../index.html#ancre-accueil" class="item-navigation"
+              >Accueil</a
+            >
           </li>
           <li>
-            <a href="../pages/le_club.html" class="item-navigation">Le club</a>
+            <a href="../pages/le_club.html#ancre-club" class="item-navigation"
+              >Le club</a
+            >
           </li>
 
           <li>
-            <a href="../pages/calendrier.html" class="item-navigation"
+            <a
+              href="../pages/calendrier.html#ancre-calendrier"
+              class="item-navigation"
               >Calendrier</a
             >
           </li>
           <li>
-            <a href="../pages/contact.html" class="item-navigation">Contact</a>
+            <a href="../pages/contact.html#ancre-form" class="item-navigation"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
     </header>
     <main>
       <form>
-        <div class="p">
-          <p>contactez nous pour plus d'informations</p>
-        </div>
+        <p>contactez nous pour plus d'informations</p>
+
         <div>
           <label for="name" placeholder="Entrez un pseudo">Votre nom</label>
           <input type="text" id="name" name="user_name" />
@@ -58,9 +65,9 @@
         </div>
         <div>
           <label for="msg">Votre message</label>
-          <textarea id="msg" name="user_message"></textarea>
+          <textarea class="txtArea" id="msg" name="user_message"></textarea>
         </div>
-        <div>
+        <div id="ancre-form">
           <button type="submit">Valider</button>
         </div>
       </form>
